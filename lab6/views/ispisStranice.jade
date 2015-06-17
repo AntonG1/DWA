@@ -1,0 +1,73 @@
+      
+!!! 5
+html
+	head
+		link(href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css", rel="stylesheet", media="screen")
+		meta(http-equiv='content-type', content='text/html; charset=utf-8')
+		script(src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js")
+		link(href="css/stil.css", rel="stylesheet", media="screen")
+		link(rel="stylesheet", href="css/bootstrap.min.css")
+		link(rel="stylesheet", href="css/grid.css")
+		link(rel="stylesheet", href="css/stil.css")
+		title Lab 6
+	body
+		.row.pozadina.header
+			.col-xs-10.col-sm-10.col-md-9
+				img(src='images/logo.jpg', height='60', width='160', alt='')
+			.col-xs-2.col-md-3.odjava
+				form(name='odjava', method='POST', action='logout.php')
+					=user
+					button.btn.btn-default.btn-xs(type='submit', name='odjava') Odjava
+		.row.pozadina-sadrzaj
+			.col-xs-3.col-md-3
+				.linkovi
+					a(href='login.php') Home
+					br
+					a(href='popis.php') Popis
+					br
+					a(href='unos.php') Unos
+					br
+					a(href='unosTipAlergen.php') Unos tip i alergen
+					br
+					a(href='izradipdf.php') Izradi pdf
+					br
+					a(href='barChart.php') Bar chart
+					br
+					a(href='pirChart.php') Pie chart
+					br
+					a(href='pretraga.php') Pretraga inventara
+					br
+					a(href='ispis.php') Ispis Lab5
+					br
+					a(href='unosL6.php') Unos Lab6
+					
+			.col-xs-9.col-sm-9.col-md-9
+				h3 Uneseni podaci:
+				br
+				p Naziv proizvoda:
+					=$naziv
+				p Tip proizvoda:
+					= $tip
+				p Opis proizvoda:
+					= $opis
+				p Vegetarijanski:
+					=$vegetarijanski
+				p Halal:
+					=$halal
+				p Košer:
+					=$koser
+				p Alergeni:
+					=$alergeni
+				p Cijena:
+					=$cijena
+				br
+
+	footer
+		.footer.row
+			.footer-navigation
+				p.text-center  Copyright &copy; ZKD, 2015
+    
+	:javascript
+		window.history.forward();
+        
+        

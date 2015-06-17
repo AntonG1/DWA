@@ -1,0 +1,40 @@
+      
+!!! 5
+html
+	head
+		link(href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css", rel="stylesheet", media="screen")
+		meta(http-equiv='content-type', content='text/html; charset=utf-8')
+		script(src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js")
+		link(href="css/stil.css", rel="stylesheet", media="screen")
+		link(rel="stylesheet", href="css/bootstrap.min.css")
+		link(rel="stylesheet", href="css/grid.css")
+		link(rel="stylesheet", href="css/stil.css")
+		title Lab 6
+	body
+		.sadrzaj
+			.row.pozadina-sadrzaj
+				article.paragraf.column.column-6
+					img(src='images/logo.jpg', height='auto', width='100%', alt='')
+					h4 Non ut edam vivo, sed vivam edo.
+				article.paragraf.column.column-6(align='center')
+					.paragraf-2(align='center')
+						form.form-horizontal(action='checklogin.php', method='POST')
+							.form-group
+								label.col-sm-2.control-label(for='username') Korisnik:
+								.col-sm-10
+									input#username.form-control(type='text', name='username', placeholder='Korisničko ime')
+							.form-group
+								label.col-sm-2.control-label(for='password') Password:
+								.col-sm-10
+									input#password.form-control(type='password', name='password', placeholder='Password')
+							.form-group
+								.col-sm-offset-2.col-sm-10
+									button.btn.btn-default(type='submit', name='login') Sign in
+
+	footer.footer.row
+		nav.footer-navigation
+			p Copyright © ZKD, 2015
+			
+	//jQuery (necessary for Bootstrap's JavaScript plugins) 
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+    script(src='js/bootstrap.min.js')

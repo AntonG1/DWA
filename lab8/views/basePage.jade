@@ -1,0 +1,122 @@
+﻿      
+!!! 5
+html
+	head
+		link(href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css", rel="stylesheet", media="screen")
+		meta(http-equiv='content-type', content='text/html; charset=utf-8')
+		script(src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js")
+		link(href="css/stil.css", rel="stylesheet", media="screen")
+		link(rel="stylesheet", href="css/bootstrap.min.css")
+		link(rel="stylesheet", href="css/grid.css")
+		link(rel="stylesheet", href="css/stil.css")
+		title Lab 6
+	body
+		.row.pozadina.header
+			.col-xs-10.col-sm-10.col-md-9
+				img(src='images/logo.jpg', height='60', width='160', alt='')
+			.col-xs-2.col-md-3.odjava
+				form(name='odjava', method='POST', action='logout.php')
+					=user
+					button.btn.btn-default.btn-xs(type='submit', name='odjava') Odjava
+		.row
+		.row.pozadina-sadrzaj
+			.col-xs-3.col-md-3
+				.linkovi
+					a(href='login.php') Home
+					br
+					a(href='popis.php') Popis
+					br
+					a(href='unos.php') Unos
+					br
+					a(href='unosTipAlergen.php') Unos tip i alergen
+					br
+					a(href='izradipdf.php') Izradi pdf
+					br
+					a(href='barChart.php') Bar chart
+					br
+					a(href='pirChart.php') Pie chart
+					br
+					a(href='pretraga.php') Pretraga inventara
+					br
+					a(href='ispis.php') Ispis Lab5
+					br
+					a(href='unosL6.php') Unos Lab6
+					
+					
+			.col-xs-9.col-sm-9.col-md-9
+				h2 Unos proizvoda
+				form.form-horizontal(action='ispisL6', method='POST', role='form')
+					.form-group
+						.col-sm-12 Naziv proizvoda:
+							input#form-control(type='text', name='naziv', placeholder='Naziv proizvoda')
+						
+					.col-sm-10 Tip proizvoda:
+							select(name='tip')
+								option(value='torta') Torta
+								option(value='keks') Keks
+								option(value='kolač') Kolač
+								option(value='čokolada') čokolada
+								option(value='piće') Piće
+								option(value='ostalo') Ostalo
+								br
+								br
+						.col-sm-10 Opis proizvoda:
+							input#form-control(type='text', name='opis', placeholder='Opis proizvoda')
+							br
+							br
+						.col-sm-10 Vegetarijanski:
+							select(name='vegetarijanski')
+								option(value='DA') Da
+								option(value='NE') Ne
+							br
+							br
+						.col-sm-10 Halal:
+							select(name='halal')
+								option(value='DA') Da
+								option(value='NE') Ne
+							br
+							br
+						.col-sm-10 Košer:
+							select(name='koser')
+								option(value='DA') Da
+								option(value='NE') Ne
+							br
+							br
+						.col-sm-10 Tipovi alergena:
+							soja soja
+							input(type='checkbox', name='soja', value='soja,')
+							jaja jaja
+							input(type='checkbox', name='jaja', value='jaja,')
+							kikiriki kikiriki
+							input(type='checkbox', name='kikiriki', value='kikiriki,')
+							mlijeko mlijeko
+							input(type='checkbox', name='mlijeko', value='mlijeko,')
+							rakovi rakovi
+							input(type='checkbox', name='rakovi', value='rakovi,')
+							školjke
+							input(type='checkbox', name='skoljke', value='skoljke,')
+							or orašasti plodovi
+							input(type='checkbox', name='orasasti', value='orasasti,')
+							jagoda jagoda
+							input(type='checkbox', name='jagoda', value='jagoda,')
+							kivi kivi
+							input(type='checkbox', name='kivi', value='kivi,')
+							ananas ananas
+							input(type='checkbox', name='ananas', value='ananas,')
+							br
+							br
+							.col-sm-10 Cijena:
+							input#form-control(type='text', name='cijena', placeholder='Cijena')
+
+					.form-group
+						.col-sm-offset-2.col-sm-10
+							button.btn.btn-default(type='submit') Unos
+	footer
+		.footer.row
+			.footer-navigation
+				p.text-center  Copyright &copy; ZKD, 2015
+    
+	:javascript
+		window.history.forward();
+        
+        

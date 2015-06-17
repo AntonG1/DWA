@@ -1,0 +1,171 @@
+
+html{
+	
+	background:#DE535D,;
+
+}
+
+	.sadrzaj {
+  /*color: #FFF;*/
+  /*background: #fff;*/
+  margin-top:100px;
+  color: #88B51E,;
+  padding: 1% ;
+  
+}
+
+.linkovi{
+	
+	color:black;
+	text-decoration:none;
+	padding:4%;
+
+}
+.linkovi a{
+    color:black;
+	text-decoration:none;
+	
+}
+
+.header a:hover{
+	
+	color:white;
+	text-decoration:none;
+}
+
+.header a:focus{
+		outline:thin dotted;outline:5px auto -webkit-focus-ring-color;
+		outline-offset:-2px
+}
+
+	a:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;
+	outline-offset:-2px}figure{margin:0}img{vertical-align:middle}
+
+.header a{
+	color:black;text-decoration:none
+}
+
+
+	
+.linkovi a:hover{
+	
+	color:#428bca;
+	text-decoration:none;
+}
+
+.tablica {
+	padding:1%;
+}
+
+.tablica tr:hover { background: #FCF; }
+.tablica td{
+	text-align:center;
+}
+
+.tablica th{
+	text-align:center;
+}
+
+.linkovi:a hover{
+	
+	color:red;
+	
+}
+
+.stvari{
+	
+	
+	position:apsolute;
+	float:center-left;
+/*	float:center; */
+	padding:1%;
+	
+	text-align:left;
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,0.3);
+	box-shadow: 0 0 5px rgba(0,0,0,0.3);
+	/*z-index: 1;*/
+	/*left:1200px;*/
+	/*margin-top:-15px;*/
+}
+
+.header { 
+  background: black; 
+ 
+  -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+ 
+ 
+ 
+  
+}
+
+.logo{
+	
+	
+}
+
+.pozadina {
+	
+	background-color:#DE535D;
+	 -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.pozadina:a hover {
+		
+		color=#fff;
+		
+	}
+
+.pozadina-sadrzaj {
+	
+	 -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+	
+}
+
+.odjava{
+	
+	
+	padding:1%;
+	text-align:right;
+	color:black;
+
+}
+
+.sadrzaj h2, .sadrzaj p, .sadrzaj h1 {
+  margin: 0;
+  /*color: #FFF;*/
+  color: #88B51E,;
+}
+
+.sadrzaj article {
+  margin-top: 30px;
+}
+
+.paragraf{
+	
+text-align:center;
+ 
+}
+
+.paragraf-2{
+	
+	text-align:left;
+
+}
+
+.footer {
+  margin-top: 20px;
+	text-align: center;
+	padding: 10px;
+	background: #DE535D;
+}
+
+p:hover {
+    background-color: yellow;
+}
